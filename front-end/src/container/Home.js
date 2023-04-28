@@ -7,6 +7,7 @@ import CONSTANTS from '../constants/common'
 const { Header, Footer, Content } = Layout;
 
 const headerStyle = {
+  width:'100%',
   textAlign: 'center',
   color: '#fff',
   height: 64,
@@ -16,11 +17,10 @@ const headerStyle = {
 };
 const contentStyle = {
   textAlign: 'center',
-  minHeight: 120,
-  lineHeight: '120px',
   color: '#fff',
-  backgroundColor: '#108ee9',
-  padding:'0 5rem'
+  minHeight:'100%',
+  backgroundColor: '#ffffff',
+  padding:'0 12rem'
 };
 
 const footerStyle = {
@@ -32,21 +32,11 @@ const footerStyle = {
 
 const Home = () => {
     return (
-        <Space
-        direction="vertical"
-        style={{
-          width: '100rem',
-          margin: '0 5rem'
-        }}
-      >
         <Layout>
           <Header style={headerStyle}><h2>{CONSTANTS.HEADER_TITLE}</h2></Header>
           <Content style={contentStyle}><Location/></Content>
           <Footer style={footerStyle}>{CONSTANTS.FOOTER_TITLE}</Footer>
         </Layout>
-        
-      </Space>
-       
       );
 }
 export default Home;

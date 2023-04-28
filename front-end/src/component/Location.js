@@ -55,7 +55,7 @@ const Location = () => {
 
       const cameraInfoArr = trafficInfo.data.items[0].cameras;
       const cameraInfo = cameraInfoArr.map((item,index)=>{
-        // finding the nearest locaion of the tr
+        // finding the nearest locaion of the traffic
         const res = geolib.findNearest(item.location,weatherObjArr);
         return {...item,...res}
 

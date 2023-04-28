@@ -2,7 +2,7 @@ const constant = {
     HEADER_TITLE:'Traffic and Weather Information',
     FOOTER_TITLE:'Copyright@2023',
     LOCATION:{
-        CHOOSE_DATE:'Please Choose Date',
+        CHOOSE_DATE:'Please select Date to view the locations',
         SEARCH_LOCATION:'Search location'
     },
     WEATHER:{
